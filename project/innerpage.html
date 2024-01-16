@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-light">
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="row w-100 d-flex ">
+                <div class="col-2 d-flex">
+                    <img src="images/menu-bar.svg" alt="image" class="mx-3">
+                    <img src="images/header-logo.svg" alt="image">
+                </div>
+
+                <div class="col-8 d-flex justify-content-between ">
+                    <div class="ms-5 d-flex"><img src="images/search-icon.svg" alt="image">
+                        <p class=" align-center text-center m-2 fs-5">Search</p>
+                    </div>
+                    <img src="images/notification-icon.svg" alt="image">
+                </div>
+                <div class="col-2 d-flex justify-content-center align-middle">
+                    <img src="images/profile.png" alt="image">
+                    <p class=" align-center text-center m-2 fs-6">Johndoe</p>
+                    <img src="images/downward-arrow.svg" alt="image">
+                </div>
+        </nav>
+
+
+
+        <div class="row w-100">
+            <div class="col-2">
+                <div class="d-flex justify-content-left align-middle ms-5 mt-4 ">
+                    <img src="images/dashboard-active.svg" alt="image">
+                    <p class="m-2 text-danger">Dashboard</p>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-left align-middle ms-5 mt-1 ">
+                        <img src="images/graph-default.svg" alt="image">
+                        <p class="m-2">Analysis</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-left align-middle ms-5 mt-1 ">
+                        <img src="images/inbox-default.svg" alt="image">
+                        <p class="m-2">Inbox</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-left align-middle ms-5 mt-1 ">
+                        <img src="images/clock-default.svg" alt="image">
+                        <p class="m-2">History</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-left align-middle ms-5 mt-1 ">
+                        <img src="images/user-default.svg" alt="image">
+                        <p class="m-2">Users</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-left align-middle ms-5 mt-1 ">
+                        <img src="images/maintenance-default.svg" alt="image">
+                        <p class="m-2">Maintenance</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-left align-middle ms-5 mt-1 ">
+                        <img src="images/setting-default.svg" alt="image">
+                        <p class="m-2">Setting</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 ">
+                <p class="fs-5 fw-bold">Analysis</p>
+                <form>
+                    <p class="fs-5 fw-bold mb-3">Column-1</p>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Name</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Description</label>
+                      </div>
+                    <p class="mx-2 fs-5 fw-bold">Column-2</p>
+                    <div class="row g-3 mb-3">
+                        <div class="col mb-0 form-floating ">
+                            <input type="text" class="form-control" placeholder="h" aria-label="First name">
+                            <label for="floatingInput"><p class="text-secondary">First Name </p></label>
+                        </div>
+                        <div class="col mb-0 form-floating ">
+                            <input type="text" class="form-control" placeholder="h" aria-label="Last name">
+                            <label for="floatingInput"><p class="text-secondary">Last Name</p></label>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="input-group has-validation col mb-0">
+                            
+                            <div class="form-floating is-invalid ">
+                              <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
+                              <label for="floatingInputGroup2">Username</label>
+                            </div>
+                            <div class="invalid-feedback">
+                              Please choose a username.
+                            </div>
+                          </div>
+
+                          <div class="input-group has-validation col mb-0">
+                            
+                            <div class="form-floating is-invalid">
+                              <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
+                              <label for="floatingInputGroup2">Password</label>
+                            </div>
+                            <div class="invalid-feedback">
+                              Invalid Password.
+                            </div>
+                          </div>
+                        
+                    </div>
+                    <p class="mx-2 fs-5 fw-bold">Column-3</p>
+                    <div class="row g-3 mb-3">
+                        <div class="col mb-0 form-floating ">
+                            <input type="text" class="form-control" placeholder="phone" aria-label="First name">
+                            <label for="floatingInput"><p class="text-secondary">Name </p></label>
+                        </div>
+                        <div class="col form-floating ">
+                            <input type="text mb-0" class="form-control" placeholder="discription"
+                                aria-label="Last name">
+                                <label for="floatingInput"><p class="text-secondary">E-mail </p></label>
+                        </div>
+                        <div class="col form-floating ">
+                            <input type="number mb-3" class="form-control" placeholder="discription"
+                                aria-label="Phone">
+                                <label for="floatingInput"><p class="text-secondary">phone </p></label>
+                        </div>
+                    </div>
+                    <p class="mx-2 fs-5 fw-bold">Column-4</p>
+                    <div class="row g-3 mb-3">
+                        <div class="col mb-0 form-floating ">
+                            <input type="text" class="form-control" placeholder="one" aria-label="one">
+                            <label for="floatingInput"><p class="text-secondary">1 </p></label>
+                        </div>
+                        <div class="col form-floating">
+                            <input type="text mb-0" class="form-control" placeholder="two" aria-label="Last name">
+                            <label for="floatingInput"><p class="text-secondary">2 </p></label>
+                        </div>
+                        <div class="col form-floating">
+                            <input type="text mb-0" class="form-control" placeholder="three" aria-label="Last name">
+                            <label for="floatingInput"><p class="text-secondary">3 </p></label>
+                        </div>
+                        <div class="col form-floating">
+                            <input type="text mb-0" class="form-control" placeholder="four" aria-label="Last name">
+                            <label for="floatingInput"><p class="text-secondary">4 </p></label>
+                        </div>
+                    </div>
+                    <p class="mx-2 fs-5 fw-bold">Other Elements</p>
+                    <p class="mx-2 fs-5 fw-bold">File Upload</p>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="inputGroupFile02">
+                        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                    </div>
+                    <p class="mx-2 fs-5 fw-bold">Radio-buttons</p>
+                    <div class="form-check  form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            1
+                        </label>
+                    </div>
+                    <div class="form-check  form-check-inline mb-3">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            2
+                        </label>
+                    </div>
+                    <p class="mx-2 fs-5 fw-bold">Check-buttons</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            1
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck2">
+                            2
+                        </label>
+                    </div>
+                    <p class="mx-2 fs-5 fw-bold">snackbar</p>
+                    <div class="row g-3 mb-4">
+                        <div class="col mb-0">
+                            <input class="form-control text-danger border-danger" type="text"
+                                value="This is error message " aria-label="readonly input example" readonly>
+                                
+                        </div>
+                        <div class="col mb-0">
+                            <input class="form-control text-info border-info" type="text" value="This is information"
+                                aria-label="readonly input example" readonly>
+                        </div>
+                    </div>
+                    <div class="row g-3 mb-4">
+                        <div class="col mb-0">
+                            <input class="form-control text-warning border-warning" type="text"
+                                value="This is warning message" aria-label="readonly input example" readonly>
+                        </div>
+                        <div class="col mb-0">
+                            <input class="form-control text-success border-success" type="text" value="This is success"
+                                aria-label="readonly input example" readonly>
+                        
+                        </div>
+                    </div>
+                    <p class="mb-3 fs-5 fw-bold">Call to action</p>
+                    <div class="justify-content-between">
+                        <input type="checkbox" class="btn-check mb-4 " id="btn-check" autocomplete="off">
+                        <label class="btn btn-primary rounded-pill mx-2" for="btn-check">Primary</label>
+
+                        <input type="checkbox" class="btn-check mb-3" id="btn-check-2" checked autocomplete="off">
+                        <label class="btn btn-light rounded-pill mx-2" for="btn-check-2">Secondary</label>
+                    </div>
+                    <p class="mb-3 mt-3 fs-5 fw-bold">Tabs</p>
+                    <ul class="nav nav-tabs  border-secondary ">
+                        <li class="nav-item border-danger ">
+                          <a class="nav-link active border-danger border-top-0 border-start-0 border-end-0 border-bottom " aria-current="page" href="#">Tab 1</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link border-danger border-top-0 border-start-0 border-end-0 border-bottom-0 " href="#">Tab 2</a>
+                        </li>
+                        <li class="nav-item ">
+                          <a class="nav-link border-danger border-top-0 border-start-0 border-end-0 border-bottom-0 " href="#">Tab 3</a>
+                        </li>
+                        
+                      </ul>
+                    <p class="mb-3 mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        only five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
+
+                </form>
+            </div>
