@@ -9,154 +9,239 @@
 </head>
 
 <body>
-    <div class="container-fluid bg-light">
+    <div>
 
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <div class="row w-100 d-flex ">
-                <div class="col-2 d-flex">
-                    <img src="images/menu-bar.svg" alt="image" class="mx-3">
-                    <img src="images/header-logo.svg" alt="image">
+        <nav class="navbar bg-body-tertiary align-middle pb-0 flex-wrap">
+            <div class="row w-100 bg-white d-flex align-items-center pt-2">
+                <div class="col-9 col-md-4 bg-white">
+
+                    <a class="btn btn-white p-0 d-inline d-md-none" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                        role="button" aria-controls="offcanvasExample">
+                        <img src="images/menu-bar.svg" alt="menubar" class="mx-md-3 mx-sm-2 order-sm-2 d-inline">
+                    </a>
+                    <img src="images/menu-bar.svg" alt="menubar"
+                        class="mx-md-3 mx-sm-2 order-sm-2 d-inline d-none d-md-inline">
+                    <img src="images/header-logo.svg" alt="headerlogo" class="d-none d-md-inline">
+                    <img src="images/favicon.ico" alt="logo" height="25px" width="25px"
+                        class="d-inline d-md-none order-sm-1">
+                        
                 </div>
 
-                <div class="col-8 d-flex justify-content-between ">
-                    <div class="ms-5 d-flex"><img src="images/search-icon.svg" alt="image">
-                        <p class=" align-center text-center m-2 fs-5">Search</p>
+                <div class="col-6 col-md-4">
+                    <div class="d-flex justify-content-between align-items-center m-2">
+                        <div class="search-wrapper">
+                            <img src="images/search-icon.svg" alt="searchlogo" class="search-style">
+                            <span class="nav-text-style d-inline m-3">
+                                Search
+                            </span>
+                        </div>
+                        <div class="notification">
+                            <img src="images/notification-icon.svg" alt="notification-icon">
+                        </div>
                     </div>
-                    <img src="images/notification-icon.svg" alt="image">
                 </div>
-                <div class="col-2 d-flex justify-content-center align-middle">
-                    <img src="images/profile.png" alt="image">
-                    <p class=" align-center text-center m-2 fs-6">Johndoe</p>
-                    <img src="images/downward-arrow.svg" alt="image">
-                </div>
-        </nav>
 
+                <div class="col-3 col-md-4 text-center">
+                    <div class="d-flex align-items-center justify-content-center g-2 m-auto">
+                        <img src="images/profile.png" alt="profile-pic">
+                        <div class="ms-2">
+                            <span class="d-none d-md-inline">John Doe</span>
+                            <img src="images/downward-arrow.svg" alt="downward-arrow" class="d-none d-md-inline">
+                        </div>
+                    </div>
+                </div>
 
-
-        <div class="row w-100">
-            <div class="col-2">
-                <div class="d-flex justify-content-left align-middle ms-5 mt-4 ">
-                    <img src="images/dashboard-active.svg" alt="image">
-                    <p class="m-2 text-danger">Dashboard</p>
-                </div>
-                <div>
-                    <div class="d-flex justify-content-left align-middle ms-5 mt-1 ">
-                        <img src="images/graph-default.svg" alt="image">
-                        <p class="m-2">Analysis</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="d-flex justify-content-left align-middle ms-5 mt-1 ">
-                        <img src="images/inbox-default.svg" alt="image">
-                        <p class="m-2">Inbox</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="d-flex justify-content-left align-middle ms-5 mt-1 ">
-                        <img src="images/clock-default.svg" alt="image">
-                        <p class="m-2">History</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="d-flex justify-content-left align-middle ms-5 mt-1 ">
-                        <img src="images/user-default.svg" alt="image">
-                        <p class="m-2">Users</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="d-flex justify-content-left align-middle ms-5 mt-1 ">
-                        <img src="images/maintenance-default.svg" alt="image">
-                        <p class="m-2">Maintenance</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="d-flex justify-content-left align-middle ms-5 mt-1 ">
-                        <img src="images/setting-default.svg" alt="image">
-                        <p class="m-2">Setting</p>
-                    </div>
-                </div>
             </div>
-            <div class="col-10 ">
+        </nav>
+        <div class="row w-100">
+        <div class="col-3 align-middle text-size sidebar bg-white offcanvas offcanvas-start d-sm-block d-md-none"
+            tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+            <div class="offcanvas-header">
+                <h5 id="offcanvasTopLabel">Menubar</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="justify-content-center align-items-center dashboard-style bg-white">
+                <img src="images/dashboard-active.svg" alt="dashboard-active" class="logo-size mx-3 my-3 ">
+                <span> Dashboard</span>
+            </div>
+
+            <div>
+                <img src="images/graph-default.svg" alt="graph-active" class="logo-size mx-3 my-3">
+                <span> Analysis</span>
+            </div>
+
+            <div>
+                <img src="images/inbox-default.svg" alt="graph-active" class="logo-size mx-3 my-3">
+                <span> Inbox</span>
+            </div>
+
+            <div>
+                <img src="images/clock-default.svg" alt="graph-active" class="logo-size mx-3 my-3">
+                <span> History</span>
+            </div>
+
+            <div>
+                <img src="images/user-default.svg" alt="graph-active" class="logo-size mx-3 my-3">
+                <span> Users </span>
+            </div>
+
+            <div>
+                <img src="images/maintenance-default.svg" alt="graph-active" class="logo-size mx-3 my-3">
+                <span> Maintanence</span>
+            </div>
+
+            <div>
+                <img src="images/setting-default.svg" alt="graph-active" class="logo-size mx-3 my-3">
+                <span> Setting</span>
+            </div>
+
+        </div>
+       
+            <!-- ###################### 2nd time for stick sidebar ######################################## -->
+            <div class="col-3 align-middle text-size sidebar bg-white d-none d-md-inline">
+                <div class="justify-content-center align-items-center dashboard-style bg-white">
+                    <img src="images/dashboard-active.svg" alt="dashboard-active" class="logo-size mx-3 my-3 ">
+                    <span> Dashboard</span>
+                </div>
+
+                <div>
+                    <img src="images/graph-default.svg" alt="graph-active" class="logo-size mx-3 my-3">
+                    <span> Analysis</span>
+                </div>
+
+                <div>
+                    <img src="images/inbox-default.svg" alt="graph-active" class="logo-size mx-3 my-3">
+                    <span> Inbox</span>
+                </div>
+
+                <div>
+                    <img src="images/clock-default.svg" alt="graph-active" class="logo-size mx-3 my-3">
+                    <span> History</span>
+                </div>
+
+                <div>
+                    <img src="images/user-default.svg" alt="graph-active" class="logo-size mx-3 my-3">
+                    <span> Users </span>
+                </div>
+
+                <div>
+                    <img src="images/maintenance-default.svg" alt="graph-active" class="logo-size mx-3 my-3">
+                    <span> Maintanence</span>
+                </div>
+
+                <div>
+                    <img src="images/setting-default.svg" alt="graph-active" class="logo-size mx-3 my-3">
+                    <span> Setting</span>
+                </div>
+
+            </div>
+
+            <div class="col-9 ">
                 <p class="fs-5 fw-bold">Analysis</p>
+
+
+
+
                 <form>
-                    <p class="fs-5 fw-bold mb-3">Column-1</p>
+                    <p class="fs-5 fw-bold mb-3 ">Column-1</p>
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
                         <label for="floatingInput">Name</label>
-                      </div>
-                      <div class="form-floating mb-3">
+                    </div>
+                    <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
                         <label for="floatingPassword">Description</label>
-                      </div>
+                    </div>
                     <p class="mx-2 fs-5 fw-bold">Column-2</p>
                     <div class="row g-3 mb-3">
                         <div class="col mb-0 form-floating ">
                             <input type="text" class="form-control" placeholder="h" aria-label="First name">
-                            <label for="floatingInput"><p class="text-secondary">First Name </p></label>
+                            <label for="floatingInput">
+                                <p class="text-secondary">First Name </p>
+                            </label>
                         </div>
                         <div class="col mb-0 form-floating ">
                             <input type="text" class="form-control" placeholder="h" aria-label="Last name">
-                            <label for="floatingInput"><p class="text-secondary">Last Name</p></label>
+                            <label for="floatingInput">
+                                <p class="text-secondary">Last Name</p>
+                            </label>
                         </div>
                     </div>
                     <div class="row g-3">
                         <div class="input-group has-validation col mb-0">
-                            
-                            <div class="form-floating is-invalid ">
-                              <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
-                              <label for="floatingInputGroup2">Username</label>
-                            </div>
-                            <div class="invalid-feedback">
-                              Please choose a username.
-                            </div>
-                          </div>
 
-                          <div class="input-group has-validation col mb-0">
-                            
-                            <div class="form-floating is-invalid">
-                              <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
-                              <label for="floatingInputGroup2">Password</label>
+                            <div class="form-floating is-invalid ">
+                                <input type="text" class="form-control is-invalid" id="floatingInputGroup2"
+                                    placeholder="Username" required>
+                                <label for="floatingInputGroup2">Username</label>
                             </div>
                             <div class="invalid-feedback">
-                              Invalid Password.
+                                Please choose a username.
                             </div>
-                          </div>
-                        
+                        </div>
+
+                        <div class="input-group has-validation col mb-0">
+
+                            <div class="form-floating is-invalid">
+                                <input type="text" class="form-control is-invalid" id="floatingInputGroup2"
+                                    placeholder="Username" required>
+                                <label for="floatingInputGroup2">Password</label>
+                            </div>
+                            <div class="invalid-feedback">
+                                Invalid Password.
+                            </div>
+                        </div>
+
                     </div>
                     <p class="mx-2 fs-5 fw-bold">Column-3</p>
                     <div class="row g-3 mb-3">
                         <div class="col mb-0 form-floating ">
                             <input type="text" class="form-control" placeholder="phone" aria-label="First name">
-                            <label for="floatingInput"><p class="text-secondary">Name </p></label>
+                            <label for="floatingInput">
+                                <p class="text-secondary">Name </p>
+                            </label>
                         </div>
                         <div class="col form-floating ">
                             <input type="text mb-0" class="form-control" placeholder="discription"
                                 aria-label="Last name">
-                                <label for="floatingInput"><p class="text-secondary">E-mail </p></label>
+                            <label for="floatingInput">
+                                <p class="text-secondary">E-mail </p>
+                            </label>
                         </div>
                         <div class="col form-floating ">
-                            <input type="number mb-3" class="form-control" placeholder="discription"
-                                aria-label="Phone">
-                                <label for="floatingInput"><p class="text-secondary">phone </p></label>
+                            <input type="number mb-3" class="form-control" placeholder="discription" aria-label="Phone">
+                            <label for="floatingInput">
+                                <p class="text-secondary">phone </p>
+                            </label>
                         </div>
                     </div>
                     <p class="mx-2 fs-5 fw-bold">Column-4</p>
                     <div class="row g-3 mb-3">
                         <div class="col mb-0 form-floating ">
                             <input type="text" class="form-control" placeholder="one" aria-label="one">
-                            <label for="floatingInput"><p class="text-secondary">1 </p></label>
+                            <label for="floatingInput">
+                                <p class="text-secondary">1 </p>
+                            </label>
                         </div>
                         <div class="col form-floating">
                             <input type="text mb-0" class="form-control" placeholder="two" aria-label="Last name">
-                            <label for="floatingInput"><p class="text-secondary">2 </p></label>
+                            <label for="floatingInput">
+                                <p class="text-secondary">2 </p>
+                            </label>
                         </div>
                         <div class="col form-floating">
                             <input type="text mb-0" class="form-control" placeholder="three" aria-label="Last name">
-                            <label for="floatingInput"><p class="text-secondary">3 </p></label>
+                            <label for="floatingInput">
+                                <p class="text-secondary">3 </p>
+                            </label>
                         </div>
                         <div class="col form-floating">
                             <input type="text mb-0" class="form-control" placeholder="four" aria-label="Last name">
-                            <label for="floatingInput"><p class="text-secondary">4 </p></label>
+                            <label for="floatingInput">
+                                <p class="text-secondary">4 </p>
+                            </label>
                         </div>
                     </div>
                     <p class="mx-2 fs-5 fw-bold">Other Elements</p>
@@ -198,7 +283,7 @@
                         <div class="col mb-0">
                             <input class="form-control text-danger border-danger" type="text"
                                 value="This is error message " aria-label="readonly input example" readonly>
-                                
+
                         </div>
                         <div class="col mb-0">
                             <input class="form-control text-info border-info" type="text" value="This is information"
@@ -213,7 +298,7 @@
                         <div class="col mb-0">
                             <input class="form-control text-success border-success" type="text" value="This is success"
                                 aria-label="readonly input example" readonly>
-                        
+
                         </div>
                     </div>
                     <p class="mb-3 fs-5 fw-bold">Call to action</p>
@@ -227,16 +312,19 @@
                     <p class="mb-3 mt-3 fs-5 fw-bold">Tabs</p>
                     <ul class="nav nav-tabs  border-secondary ">
                         <li class="nav-item border-danger ">
-                          <a class="nav-link active border-danger border-top-0 border-start-0 border-end-0 border-bottom " aria-current="page" href="#">Tab 1</a>
+                            <a class="nav-link active border-danger border-top-0 border-start-0 border-end-0 border-bottom "
+                                aria-current="page" href="#">Tab 1</a>
                         </li>
                         <li class="nav-item ">
-                          <a class="nav-link border-danger border-top-0 border-start-0 border-end-0 border-bottom-0 " href="#">Tab 2</a>
+                            <a class="nav-link border-danger border-top-0 border-start-0 border-end-0 border-bottom-0 "
+                                href="#">Tab 2</a>
                         </li>
                         <li class="nav-item ">
-                          <a class="nav-link border-danger border-top-0 border-start-0 border-end-0 border-bottom-0 " href="#">Tab 3</a>
+                            <a class="nav-link border-danger border-top-0 border-start-0 border-end-0 border-bottom-0 "
+                                href="#">Tab 3</a>
                         </li>
-                        
-                      </ul>
+
+                    </ul>
                     <p class="mb-3 mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                         printer took a galley of type and scrambled it to make a type specimen book. It has survived not
@@ -244,4 +332,9 @@
                         unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</p>
 
                 </form>
-            </div>
+            </div></div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>]
